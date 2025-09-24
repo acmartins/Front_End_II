@@ -21,9 +21,9 @@ function formataDecimal(numero) {
 }
 
 if (typeof(window) !== 'undefined') { // modo browser
-    capitalInicial = prompt("Digite o valor do capital inicial: ");
-    taxaJuros = prompt("Digite o valor da taxa de juros: ");
-    qtdMeses = prompt("Digite a quantidade de meses do investimento: ");
+    capitalInicial = prompt("Exercício 6:\nDigite o valor do capital inicial: ");
+    taxaJuros = prompt("Exercício 6:\nDigite o valor da taxa de juros: ");
+    qtdMeses = prompt("Exercício 6:\nDigite a quantidade de meses do investimento: ");
 } else { //  modo console
     var readline = require('readline-sync');
     capitalInicial = readline.question("Digite o valor do capital inicial: ");
@@ -39,15 +39,15 @@ let montante = C * (1 + (i/100)) ** t;
 
 if (typeof(window) !== 'undefined') {
     // Exibe resultados html
-    var container_5 = document.getElementById("container_5");
-    container_5.innerHTML = [
+    var container_6 = document.getElementById("container_6");
+    container_6.innerHTML = [
         '<hr>',
         '<span>6)</span><br>',
         '<span>O realizando um investimento com os dados abaixo:</span><br>',
         '<span>Capital Incial: ' + formataDecimal(C) + '</span><br>',
-        '<span>Taxa de juros de : ' + formataDecimal(i) + '</span>',
-        '<span>Tempo de investimento de: ' + t + ' meses</span>',
-        '<span>Vai ter um novo capital de: ' + formataDecimal(montante) + '</span>',
+        '<span>Taxa de juros de : ' + formataDecimal(i) + '</span><br>',
+        '<span>Tempo de investimento de: ' + t + ' meses</span><br>',
+        '<span>Vai ter um novo capital de: ' + formataDecimal(montante) + '</span><br>',
         '<span>Gerando um redimento de: ' + formataDecimal(montante - C) + '</span>',
     ].join("\n");
 } else {

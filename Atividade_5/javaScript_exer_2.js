@@ -14,7 +14,7 @@ if (typeof(window) !== 'undefined') { // modo browser
 
     for (let i = 1; i < 11; i++){
 
-        entrada = prompt("Digite um número inteiro (" + i + "/10)): ");
+        entrada = prompt("Exercicio 2:\nDigite um número inteiro (" + i + "/10)): ");
 
         if (entrada === null) {
             alert("Operação cancelada.");

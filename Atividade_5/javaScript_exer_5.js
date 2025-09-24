@@ -18,7 +18,7 @@ function formataDecimal(numero) {
 let valorPI = 3.14; // Valor de PI
 
 if (typeof(window) !== 'undefined') { // modo browser
-    raioRecebido = prompt("Digite o comprimento do raio: ");
+    raioRecebido = prompt("Exercício 5:\nDigite o comprimento do raio: ");
 } else { //  modo console
     var readline = require('readline-sync');
     raioRecebido = readline.question("Digite o comprimento do raio: ");

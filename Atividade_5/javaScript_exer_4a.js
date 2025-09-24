@@ -15,18 +15,16 @@ para coletar o salário inicial.
 
 // Dados iniciais das populações e taxas de crescimento
 let salarioInformado;
-let percAumento = 0.0015; // 0,15% aumento anual inicial
-const anoInicial = 1995;
-const anoAtual = new Date().getFullYear();
+percAumento = 0.0015; // 0,15% aumento anual inicial
 
 if (typeof(window) !== 'undefined') { // modo browser
-    salarioInformado = prompt("Digite o valor do salário inicial: ");
+    salarioInformado = prompt("Exercício 4:\nDigite o valor do salário inicial: ");
 } else { //  modo console
-    var readline = require('readline-sync');
-    salarioInformado = readline.question("Digite o valor do salário inicial: ");
+    var readlineSync = require('readline-sync');
+    salarioInformado = readlineSync.question("Digite o valor do salário inicial: ");
 }    
 
-let salarioAtual = parseFloat(salarioInformado);
+salarioAtual = parseFloat(salarioInformado);
 
 for (i=anoInicial; i<=anoAtual;i++) {
   

@@ -22,8 +22,6 @@ let percAumento = 0.0015; // 0,15% aumento anual inicial
 const anoInicial = 1995;
 const anoAtual = new Date().getFullYear();
 
-console.log(anoAtual);
-
 for (i=anoInicial; i<=anoAtual;i++) {
   
     if (i <= 1995) {

@@ -36,7 +36,7 @@ if (typeof(window) !== 'undefined') {
     container_3.innerHTML = [
         '<hr>',
         '<span>3)</span><br>',
-        '<span>Conjunto de dados utilizado: ' + numeros.join() + '</span><br>',
+        '<span>Conjunto de dados utilizado: [' + numeros.join() + ']</span><br>',
         '<span>Maior número do conjunto: ' + maior + '</span><br>',
         '<span>Menor número do conjunto: ' + menor + '</span><br>',
         '<span>Soma dos valores de todos os elementos do conjunto: ' + soma + '</span><br>'
